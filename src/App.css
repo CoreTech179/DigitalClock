@@ -10,8 +10,8 @@ body{
 }
 
 .container{
-  height: 21vh;
-  width: 25vw;
+  height: 10rem;
+  width: 23rem;
   background-color: blueviolet;
   display: flex;
   justify-content: center;
@@ -26,7 +26,9 @@ body{
   animation-duration: 6s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+
 }
+
 
 @keyframes glowEffect{
   0%{
@@ -45,4 +47,32 @@ body{
 
 h3{
   color: #ffd500;
+}
+
+/* If my screen width is in between 0px to 280px then fire this css*/
+@media (min-width:0px) and (max-width:280px){
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 16rem;
+    font-size: 2.4rem;
+    font-family: serif;
+    border-radius: 20px;
+  }
+}
+
+/* If my screen width in between 281px to 375px fire this css  */
+@media (min-width:281px) and (max-width:375px){
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8.5rem;
+    width: 17.1rem;
+    font-size: 2.5rem;
+    font-family: serif;
+    border-radius: 21px;
+  }
 }
